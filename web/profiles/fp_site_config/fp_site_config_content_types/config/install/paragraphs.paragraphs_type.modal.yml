@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: modal
+label: Modal
+icon_uuid: null
+icon_default: null
+description: 'Modal popup'
+behavior_plugins: {  }

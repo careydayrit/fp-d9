@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.banner_vertical
+label: 'Banner vertical'
+targetEntityType: paragraph
+cache: true

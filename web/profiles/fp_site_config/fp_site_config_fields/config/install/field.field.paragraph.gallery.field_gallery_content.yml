@@ -1,0 +1,78 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gallery_content
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.gallery_content
+  module:
+    - entity_reference_revisions
+id: paragraph.gallery.field_gallery_content
+field_name: field_gallery_content
+entity_type: paragraph
+bundle: gallery
+label: 'Gallery content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      gallery_content: gallery_content
+    target_bundles_drag_drop:
+      content_reference:
+        weight: 18
+        enabled: false
+      featured_content:
+        weight: 19
+        enabled: false
+      accordion:
+        weight: 20
+        enabled: false
+      accordion_content:
+        weight: 21
+        enabled: false
+      card:
+        weight: 22
+        enabled: false
+      carousel:
+        weight: 23
+        enabled: false
+      carousel_image:
+        weight: 24
+        enabled: false
+      full_html:
+        weight: 25
+        enabled: false
+      gallery:
+        weight: 26
+        enabled: false
+      gallery_content:
+        enabled: true
+        weight: 27
+      jumbotron:
+        weight: 28
+        enabled: false
+      modal:
+        weight: 29
+        enabled: false
+      section_format:
+        weight: 30
+        enabled: false
+      tab_content:
+        weight: 31
+        enabled: false
+      tabs:
+        weight: 32
+        enabled: false
+      views_reference:
+        weight: 33
+        enabled: false
+      teaser:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

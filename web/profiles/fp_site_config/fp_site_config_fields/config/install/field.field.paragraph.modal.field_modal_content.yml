@@ -1,0 +1,72 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modal_content
+    - paragraphs.paragraphs_type.full_html
+    - paragraphs.paragraphs_type.modal
+  module:
+    - entity_reference_revisions
+id: paragraph.modal.field_modal_content
+field_name: field_modal_content
+entity_type: paragraph
+bundle: modal
+label: 'Modal Content'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      full_html: full_html
+    target_bundles_drag_drop:
+      card:
+        weight: 10
+        enabled: false
+      carousel:
+        weight: 11
+        enabled: false
+      carousel_image:
+        weight: 12
+        enabled: false
+      full_html:
+        enabled: true
+        weight: 13
+      jumbotron:
+        weight: 14
+        enabled: false
+      modal:
+        weight: 15
+        enabled: false
+      accordion:
+        weight: 16
+        enabled: false
+      section_format:
+        weight: 16
+        enabled: false
+      accordion_content:
+        weight: 17
+        enabled: false
+      tab_content:
+        weight: 17
+        enabled: false
+      tabs:
+        weight: 18
+        enabled: false
+      gallery:
+        weight: 22
+        enabled: false
+      gallery_content:
+        weight: 23
+        enabled: false
+      teasers:
+        weight: 29
+        enabled: false
+      views_reference:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

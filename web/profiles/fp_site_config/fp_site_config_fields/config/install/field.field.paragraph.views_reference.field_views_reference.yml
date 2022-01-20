@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_views_reference
+    - paragraphs.paragraphs_type.views_reference
+  module:
+    - viewsreference
+id: paragraph.views_reference.field_views_reference
+field_name: field_views_reference
+entity_type: paragraph
+bundle: views_reference
+label: 'Views reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: default
+    page: page
+    feed: 0
+  preselect_views:
+    content: 0
+    content_recent: 0
+    files: 0
+    frontpage: 0
+    moderated_content: 0
+    redirect: 0
+    teasers: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

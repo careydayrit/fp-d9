@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: small_50_2x
+label: 'Small Screen, 50vh @ 2x'
+effects:
+  73379391-f92b-4b35-b035-dab86a99d101:
+    uuid: 73379391-f92b-4b35-b035-dab86a99d101
+    id: image_scale
+    weight: 0
+    data:
+      width: 1280
+      height: 960
+      upscale: false

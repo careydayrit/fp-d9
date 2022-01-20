@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: medium_25_2x
+label: 'Medium Screen, 25vh @ 2x'
+effects:
+  3c0a669e-c3e3-4d6e-ae97-e4137b0e722d:
+    uuid: 3c0a669e-c3e3-4d6e-ae97-e4137b0e722d
+    id: image_scale
+    weight: 0
+    data:
+      width: 2048
+      height: 512
+      upscale: false

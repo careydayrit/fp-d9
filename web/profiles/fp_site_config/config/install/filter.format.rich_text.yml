@@ -1,0 +1,107 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.align_center
+    - core.entity_view_mode.media.align_left
+    - core.entity_view_mode.media.align_right
+  module:
+    - editor
+    - media
+    - video_filter
+name: 'Rich Text'
+format: rich_text
+weight: -8
+filters:
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 0
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <u> <s> <img src alt data-entity-type data-entity-uuid> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: align_center
+      allowed_media_types: {  }
+      allowed_view_modes:
+        align_center: align_center
+        align_left: align_left
+        align_right: align_right
+  video_filter:
+    id: video_filter
+    provider: video_filter
+    status: true
+    weight: 0
+    settings:
+      width: 400
+      height: 400
+      allow_multiple_sources: true
+      plugins:
+        youtube: youtube
+        facebook: facebook
+        twitter: twitter
+        vimeo: vimeo
+        capped: 0
+        rutube: 0
+        daily_motion: 0
+        flickr_video: 0
+        ted: 0
+        archive_org: 0
+        picasa_slideshows: 0
+        vbox: 0
+        google_video: 0
+        giphy: 0
+        coub: 0
+        myspace: 0
+        whatchado: 0
+        godtube: 0
+        twitch: 0
+        college_humor: 0
+        vine: 0
+        game_videos: 0
+        game_trailers: 0
+        democracynow: 0
+        wistia: 0
+        flickr_slideshows: 0
+        instagram: 0
+        slideshare: 0
+        myvideo: 0
+        foxnews: 0
+        mailru: 0
+        ustream: 0
+        maker_tv: 0
+        youku: 0
+        vevo: 0
+        teachertube: 0
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

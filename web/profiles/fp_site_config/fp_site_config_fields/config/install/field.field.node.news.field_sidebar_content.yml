@@ -1,0 +1,81 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sidebar_content
+    - node.type.news
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.full_html
+    - paragraphs.paragraphs_type.modal
+    - paragraphs.paragraphs_type.teasers
+  module:
+    - entity_reference_revisions
+id: node.news.field_sidebar_content
+field_name: field_sidebar_content
+entity_type: node
+bundle: news
+label: 'Sidebar content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      card: card
+      full_html: full_html
+      modal: modal
+      teasers: teasers
+    target_bundles_drag_drop:
+      accordion:
+        weight: 17
+        enabled: false
+      accordion_content:
+        weight: 18
+        enabled: false
+      card:
+        enabled: true
+        weight: 19
+      carousel:
+        weight: 20
+        enabled: false
+      carousel_image:
+        weight: 21
+        enabled: false
+      full_html:
+        enabled: true
+        weight: 22
+      gallery:
+        weight: 23
+        enabled: false
+      gallery_content:
+        weight: 24
+        enabled: false
+      jumbotron:
+        weight: 25
+        enabled: false
+      modal:
+        enabled: true
+        weight: 26
+      section_format:
+        weight: 27
+        enabled: false
+      sliver:
+        weight: 28
+        enabled: false
+      tab_content:
+        weight: 29
+        enabled: false
+      tabs:
+        weight: 30
+        enabled: false
+      teasers:
+        enabled: true
+        weight: 31
+      views_reference:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

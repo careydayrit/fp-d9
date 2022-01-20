@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: carousel
+label: Carousel
+icon_uuid: 3ef67236-61bc-437b-a987-983a8d73e88f
+icon_default: null
+description: ''
+behavior_plugins: {  }

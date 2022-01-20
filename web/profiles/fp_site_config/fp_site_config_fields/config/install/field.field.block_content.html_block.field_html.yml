@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.html_block
+    - field.storage.block_content.field_html
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    rich_text: rich_text
+    full_html: full_html
+    no_filters: no_filters
+    plain_text: '0'
+    basic: '0'
+id: block_content.html_block.field_html
+field_name: field_html
+entity_type: block_content
+bundle: html_block
+label: HTML
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

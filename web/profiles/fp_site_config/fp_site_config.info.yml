@@ -1,0 +1,106 @@
+name: 'FivePaths Stocksite Configuration'
+type: profile
+core_version_requirement: ^9
+dependencies:
+  - block
+  - dblog
+  - field
+  - field_ui
+  - file
+  - fp_ping
+  - fp_tools
+  - fp_client
+  - image
+  - language
+  - link
+  - locale
+  - media
+  - media_library
+  - menu_ui
+  - node
+  - paragraphs
+  - path
+  - redirect
+  - reroute_email
+  - responsive_image
+  - scss
+  - syslog
+  - system
+  - text
+  - toolbar
+  - twig_tweak
+  - update
+  - user
+  - views
+  - views_ui
+  - webform
+themes:
+  - bartik
+  - seven
+  - habit
+  - fp_theme
+package: 'FivePaths Stocksite Configuration'
+distribution:
+  name: '㊄'
+  langcode: en
+core_incompatible: false
+install:
+  - action
+  - admin_toolbar
+  - admin_toolbar_search
+  - admin_toolbar_tools
+  - allowed_formats
+  - automated_cron
+  - auto_entitylabel
+  - block_content
+  - ckeditor
+  - config
+  - config_auto_export
+  - config_ignore
+  - config_direct_save
+  - contact
+  - content_moderation
+  - content_translation
+  - contextual
+  - ctools
+  - ctools_block
+  - datetime
+  - datetime_range
+  - devel
+  - editor
+  - element_class_formatter
+  - entity_reference_display
+  - entity_reference_revisions
+  - field_group
+  - field_group_label
+  - file_mdm
+  - file_mdm_exif
+  - file_mdm_font
+  - filter
+  - ga
+  - image_effects
+  - image_class
+  - jquery_ui_accordion
+  - linkit
+  - media_entity_download
+  - menu_block
+  - menu_block_title
+  - menu_link_content
+  - metatag
+  - options
+  - path_alias
+  - pathauto
+  - redis
+  - responsive_image
+  - responsive_tables_filter
+  - search
+  - shortcut
+  - simple_sitemap
+  - smart_title
+  - smart_title_ui
+  - smart_trim
+  - taxonomy
+  - telephone
+  - svg_image
+  - video_filter
+  - views_bootstrap

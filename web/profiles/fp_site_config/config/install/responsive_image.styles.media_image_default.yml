@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.media_image_default_1x
+    - image.style.media_image_default_2x
+id: media_image_default
+label: 'Media Image Default'
+image_style_mappings:
+  -
+    breakpoint_id: habit.full_width_images.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: media_image_default_1x
+  -
+    breakpoint_id: habit.full_width_images.medium
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: media_image_default_2x
+breakpoint_group: 'Full Width Image Breakpoints'
+fallback_image_style: media_image_default_1x

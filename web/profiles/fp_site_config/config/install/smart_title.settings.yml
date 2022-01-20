@@ -1,0 +1,7 @@
+smart_title:
+  - 'node:basic_page'
+  - 'node:event'
+  - 'node:landing_page'
+  - 'node:news'
+  - 'node:person'
+  - 'node:resource'

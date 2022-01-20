@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_size
+    - paragraphs.paragraphs_type.gap
+  module:
+    - options
+id: paragraph.gap.field_size
+field_name: field_size
+entity_type: paragraph
+bundle: gap
+label: Size
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

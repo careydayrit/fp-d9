@@ -1,0 +1,104 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sidebar_content
+    - node.type.basic_page
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.cards
+    - paragraphs.paragraphs_type.full_html
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.gallery_modal
+    - paragraphs.paragraphs_type.modal
+    - paragraphs.paragraphs_type.tabs
+    - paragraphs.paragraphs_type.teasers
+    - paragraphs.paragraphs_type.views_reference
+  module:
+    - entity_reference_revisions
+id: node.basic_page.field_sidebar_content
+field_name: field_sidebar_content
+entity_type: node
+bundle: basic_page
+label: 'Sidebar content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion: accordion
+      banner: banner
+      full_html: full_html
+      card: card
+      cards: cards
+      gallery: gallery
+      gallery_modal: gallery_modal
+      modal: modal
+      tabs: tabs
+      teasers: teasers
+      views_reference: views_reference
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: -39
+      banner:
+        enabled: true
+        weight: -38
+      full_html:
+        enabled: true
+        weight: -37
+      card:
+        enabled: true
+        weight: -36
+      cards:
+        enabled: true
+        weight: -35
+      gallery:
+        enabled: true
+        weight: -34
+      gallery_modal:
+        enabled: true
+        weight: -33
+      modal:
+        enabled: true
+        weight: -32
+      tabs:
+        enabled: true
+        weight: -31
+      teasers:
+        enabled: true
+        weight: -30
+      views_reference:
+        enabled: true
+        weight: -29
+      carousel:
+        weight: -28
+        enabled: false
+      carousel_image:
+        weight: -27
+        enabled: false
+      jumbotron:
+        weight: -26
+        enabled: false
+      accordion_content:
+        weight: -25
+        enabled: false
+      gallery_content:
+        weight: -24
+        enabled: false
+      section_format:
+        weight: -23
+        enabled: false
+      tab_content:
+        weight: -22
+        enabled: false
+      sliver:
+        weight: -21
+        enabled: false
+field_type: entity_reference_revisions

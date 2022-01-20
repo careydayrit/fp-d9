@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.golden_ratio_horizontal
+    - image.style.golden_ratio_vertical
+  module:
+    - image_effects
+name: golden_ratio
+label: 'Golden Ratio'
+effects:
+  a470c33d-31db-470a-8516-cc0c7a3ec71e:
+    uuid: a470c33d-31db-470a-8516-cc0c7a3ec71e
+    id: image_effects_auto_orient
+    weight: 1
+    data:
+      scan_exif: true
+  e39f386b-e9c4-4f91-8792-c9fbc7162d7e:
+    uuid: e39f386b-e9c4-4f91-8792-c9fbc7162d7e
+    id: image_effects_aspect_switcher
+    weight: 2
+    data:
+      landscape_image_style: golden_ratio_horizontal
+      portrait_image_style: golden_ratio_vertical
+      ratio_adjustment: !!float 1
+  b536f2af-e6f2-4292-8b9a-c910190952b9:
+    uuid: b536f2af-e6f2-4292-8b9a-c910190952b9
+    id: image_effects_strip_metadata
+    weight: 3
+    data: {  }

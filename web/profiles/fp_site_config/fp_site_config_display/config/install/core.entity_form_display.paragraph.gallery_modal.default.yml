@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery_modal.field_columns
+    - field.field.paragraph.gallery_modal.field_images
+    - paragraphs.paragraphs_type.gallery_modal
+  module:
+    - media_library
+id: paragraph.gallery_modal.default
+targetEntityType: paragraph
+bundle: gallery_modal
+mode: default
+content:
+  field_columns:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_images:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

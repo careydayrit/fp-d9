@@ -1,0 +1,17 @@
+name: 'Stock #5: Theme Settings'
+description: 'Configures theme options to sensible defaults. This can be removed after installation.'
+type: module
+core_version_requirement: ^9
+dependencies:
+  - block
+  - ctools
+  - system
+install:
+  - block_content
+  - ctools_block
+  - menu_block
+  - menu_block_title
+themes:
+  - habit
+  - fp_theme
+package: 'FivePaths Stocksite Configuration'

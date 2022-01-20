@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: short_date
+label: 'Short Date'
+locked: false
+pattern: 'M d'

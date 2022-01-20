@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: large_25_1x
+label: 'Large Screen, 25vh @ 1x'
+effects:
+  00551466-d552-4a3d-854e-6efb424d435c:
+    uuid: 00551466-d552-4a3d-854e-6efb424d435c
+    id: image_scale
+    weight: 0
+    data:
+      width: 1920
+      height: 270
+      upscale: false

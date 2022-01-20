@@ -1,0 +1,103 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contents
+    - paragraphs.paragraphs_type.accordion_content
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.carousel_image
+    - paragraphs.paragraphs_type.gallery_content
+    - paragraphs.paragraphs_type.jumbotron
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.tab_content
+  module:
+    - entity_reference_revisions
+id: paragraph.section.field_contents
+field_name: field_contents
+entity_type: paragraph
+bundle: section
+label: Contents
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      accordion_content: accordion_content
+      card: card
+      carousel_image: carousel_image
+      gallery_content: gallery_content
+      jumbotron: jumbotron
+      tab_content: tab_content
+    target_bundles_drag_drop:
+      accordion:
+        weight: -44
+        enabled: false
+      accordion_content:
+        enabled: true
+        weight: -43
+      banner:
+        weight: -42
+        enabled: false
+      card:
+        enabled: true
+        weight: -41
+      cards:
+        weight: -40
+        enabled: false
+      carousel:
+        weight: -39
+        enabled: false
+      carousel_image:
+        enabled: true
+        weight: -38
+      files:
+        weight: -37
+        enabled: false
+      full_html:
+        weight: -45
+        enabled: false
+      gallery:
+        weight: -36
+        enabled: false
+      gallery_content:
+        enabled: true
+        weight: -35
+      gallery_modal:
+        weight: -34
+        enabled: false
+      jumbotron:
+        enabled: true
+        weight: -33
+      modal:
+        weight: -32
+        enabled: false
+      section:
+        weight: -31
+        enabled: false
+      section_format:
+        weight: -30
+        enabled: false
+      sliver:
+        weight: -29
+        enabled: false
+      tab_content:
+        enabled: true
+        weight: -27
+      tabs:
+        weight: -28
+        enabled: false
+      teaser:
+        weight: 43
+        enabled: false
+      teasers:
+        weight: -26
+        enabled: false
+      views_reference:
+        weight: -25
+        enabled: false
+field_type: entity_reference_revisions

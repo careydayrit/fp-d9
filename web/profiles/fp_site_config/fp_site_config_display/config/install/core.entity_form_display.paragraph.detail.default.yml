@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.detail.field_detail_label
+    - field.field.paragraph.detail.field_full_html
+    - paragraphs.paragraphs_type.detail
+  module:
+    - field_group_label
+    - text
+id: paragraph.detail.default
+targetEntityType: paragraph
+bundle: detail
+mode: default
+content:
+  field_detail_label:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: field_group_label_widget
+    region: content
+  field_full_html:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

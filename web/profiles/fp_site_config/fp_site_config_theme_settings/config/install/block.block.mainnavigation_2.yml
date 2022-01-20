@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - ctools
+    - menu_block
+    - menu_block_title
+  theme:
+    - fp_theme
+third_party_settings:
+  menu_block_title:
+    modify_title: true
+id: mainnavigation_2
+theme: fp_theme
+region: sidebar
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  provider: menu_block
+  label_display: visible
+  follow: true
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand: true
+  parent: 'main:'
+  suggestion: main
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

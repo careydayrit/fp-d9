@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.teasers.field_columns
+    - field.field.paragraph.teasers.field_content_reference
+    - field.field.paragraph.teasers.field_display_mode
+    - field.field.paragraph.teasers.field_title
+    - paragraphs.paragraphs_type.teasers
+  module:
+    - element_class_formatter
+    - entity_reference_display
+    - options
+id: paragraph.teasers.default
+targetEntityType: paragraph
+bundle: teasers
+mode: default
+content:
+  field_columns:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_content_reference:
+    weight: 1
+    label: hidden
+    settings:
+      display_field: ''
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_display_default
+    region: content
+  field_title:
+    type: wrapper_class
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_class: ''
+      tag: h2
+      class: title
+      link: false
+      summary: false
+      trim: 200
+    third_party_settings: {  }
+hidden:
+  field_display_mode: true
+  search_api_excerpt: true

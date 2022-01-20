@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: container
+label: Container
+icon_uuid: null
+icon_default: null
+description: 'Wraps an arbitrary number of unrestricted paragraphs in a "container" — useful within a section for restricting the width of certain contents'
+behavior_plugins: {  }

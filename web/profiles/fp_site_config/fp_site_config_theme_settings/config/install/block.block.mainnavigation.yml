@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+    - menu_block_title
+  theme:
+    - fp_theme
+third_party_settings:
+  menu_block_title:
+    modify_title: false
+id: mainnavigation
+theme: fp_theme
+region: menu
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  provider: menu_block
+  label_display: '0'
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 3
+  expand: true
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: medium_100_2x
+label: 'Medium Screen, 100vh @ 2x'
+effects:
+  14efd22c-c6a9-44a6-aa0b-321508be25cc:
+    uuid: 14efd22c-c6a9-44a6-aa0b-321508be25cc
+    id: image_scale
+    weight: 0
+    data:
+      width: 2048
+      height: 2048
+      upscale: false

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_carousel_options
+field_name: field_carousel_options
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: controls
+      label: 'Show controls'
+    -
+      value: indicators
+      label: 'Show indicators'
+    -
+      value: captions
+      label: 'Show captions'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

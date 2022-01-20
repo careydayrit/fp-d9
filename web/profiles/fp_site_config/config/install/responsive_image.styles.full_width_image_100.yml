@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large_100_1x
+    - image.style.large_100_2x
+    - image.style.medium_100_1x
+    - image.style.medium_100_2x
+    - image.style.small_100_1x
+    - image.style.small_100_2x
+id: full_width_image_100
+label: 'Full Width Image 100vh'
+image_style_mappings:
+  -
+    breakpoint_id: habit.full_width_images.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large_100_1x
+  -
+    breakpoint_id: habit.full_width_images.large
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: large_100_2x
+  -
+    breakpoint_id: habit.full_width_images.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium_100_1x
+  -
+    breakpoint_id: habit.full_width_images.medium
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: medium_100_2x
+  -
+    breakpoint_id: habit.full_width_images.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: small_100_1x
+  -
+    breakpoint_id: habit.full_width_images.small
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: small_100_2x
+breakpoint_group: 'Full Width Image Breakpoints'
+fallback_image_style: small_100_1x

@@ -1,0 +1,7 @@
+name: 'Stock #3: Content Fields'
+description: 'Installs and configures fields on stock content types. This can be removed after installation.'
+type: module
+core_version_requirement: ^9
+dependencies:
+  - fp_site_config_field_storage
+package: 'FivePaths Stocksite Configuration'

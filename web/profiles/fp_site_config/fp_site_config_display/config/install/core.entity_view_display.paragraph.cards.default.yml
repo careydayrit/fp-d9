@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cards.field_cards
+    - field.field.paragraph.cards.field_columns
+    - field.field.paragraph.cards.field_display_mode
+    - field.field.paragraph.cards.field_title
+    - paragraphs.paragraphs_type.cards
+  module:
+    - element_class_formatter
+    - entity_reference_revisions
+id: paragraph.cards.default
+targetEntityType: paragraph
+bundle: cards
+mode: default
+content:
+  field_cards:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_class: ''
+      tag: div
+      class: h2
+      link: false
+      summary: false
+      trim: 200
+    third_party_settings: {  }
+    type: wrapper_class
+    region: content
+hidden:
+  field_columns: true
+  field_display_mode: true
+  search_api_excerpt: true

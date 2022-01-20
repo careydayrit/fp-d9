@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: large_50_1x
+label: 'Large Screen, 50vh @ 1x'
+effects:
+  5c4ceed4-2932-4f33-a187-09e2e09909c6:
+    uuid: 5c4ceed4-2932-4f33-a187-09e2e09909c6
+    id: image_scale
+    weight: 0
+    data:
+      width: 1920
+      height: 540
+      upscale: false

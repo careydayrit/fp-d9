@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_mode
+    - paragraphs.paragraphs_type.cards
+  module:
+    - entity_reference_display
+id: paragraph.cards.field_display_mode
+field_name: field_display_mode
+entity_type: paragraph
+bundle: cards
+label: 'Display mode'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings:
+  exclude:
+    default: default
+    cards_sideswipe: cards_sideswipe
+  negate: 1
+field_type: entity_reference_display

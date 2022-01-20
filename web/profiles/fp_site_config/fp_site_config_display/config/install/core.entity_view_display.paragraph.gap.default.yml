@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gap.field_size
+    - paragraphs.paragraphs_type.gap
+id: paragraph.gap.default
+targetEntityType: paragraph
+bundle: gap
+mode: default
+content: {  }
+hidden:
+  field_size: true
+  search_api_excerpt: true

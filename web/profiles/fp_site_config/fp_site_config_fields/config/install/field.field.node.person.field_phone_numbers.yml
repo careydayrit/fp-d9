@@ -1,0 +1,108 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_numbers
+    - node.type.person
+    - paragraphs.paragraphs_type.telephone
+  module:
+    - entity_reference_revisions
+id: node.person.field_phone_numbers
+field_name: field_phone_numbers
+entity_type: node
+bundle: person
+label: 'Phone Numbers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      telephone: telephone
+    target_bundles_drag_drop:
+      accordion:
+        weight: 33
+        enabled: false
+      accordion_content:
+        weight: 34
+        enabled: false
+      banner:
+        weight: 35
+        enabled: false
+      block:
+        weight: 36
+        enabled: false
+      button:
+        weight: 37
+        enabled: false
+      card:
+        weight: 38
+        enabled: false
+      cards:
+        weight: 39
+        enabled: false
+      carousel:
+        weight: 40
+        enabled: false
+      carousel_image:
+        weight: 41
+        enabled: false
+      container:
+        weight: 42
+        enabled: false
+      detail:
+        weight: 43
+        enabled: false
+      files:
+        weight: 44
+        enabled: false
+      form:
+        weight: 46
+        enabled: false
+      full_html:
+        weight: 47
+        enabled: false
+      gallery:
+        weight: 48
+        enabled: false
+      gallery_content:
+        weight: 49
+        enabled: false
+      gallery_modal:
+        weight: 50
+        enabled: false
+      gap:
+        weight: 51
+        enabled: false
+      jumbotron:
+        weight: 52
+        enabled: false
+      modal:
+        weight: 53
+        enabled: false
+      section:
+        weight: 56
+        enabled: false
+      section_format:
+        weight: 57
+        enabled: false
+      tab_content:
+        weight: 60
+        enabled: false
+      tabs:
+        weight: 59
+        enabled: false
+      teasers:
+        weight: 61
+        enabled: false
+      telephone:
+        enabled: true
+        weight: 62
+      views_reference:
+        weight: 63
+        enabled: false
+field_type: entity_reference_revisions

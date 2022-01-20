@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_section_columns
+field_name: field_section_columns
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: col-12
+      label: One
+    -
+      value: col-6
+      label: Two
+    -
+      value: col-4
+      label: Three
+    -
+      value: col-3
+      label: Four
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

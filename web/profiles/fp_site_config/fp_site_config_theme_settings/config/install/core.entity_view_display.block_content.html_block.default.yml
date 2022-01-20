@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.html_block
+    - field.field.block_content.html_block.field_html
+  module:
+    - text
+id: block_content.html_block.default
+targetEntityType: block_content
+bundle: html_block
+mode: default
+content:
+  field_html:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_group_label
+    - field_permissions
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: paragraph.field_detail_label
+field_name: field_detail_label
+entity_type: paragraph
+type: field_group_label_field_type
+settings:
+  max_length: '255'
+  is_ascii: false
+  case_sensitive: false
+module: field_group_label
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

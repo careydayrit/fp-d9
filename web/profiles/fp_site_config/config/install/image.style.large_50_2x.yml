@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: large_50_2x
+label: 'Large Screen, 50vh @ 2x'
+effects:
+  8b0b09b0-90ef-45e9-bce6-f1f42981f29b:
+    uuid: 8b0b09b0-90ef-45e9-bce6-f1f42981f29b
+    id: image_scale
+    weight: 0
+    data:
+      width: 3840
+      height: 1080
+      upscale: false

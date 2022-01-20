@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: jumbotron
+label: Jumbotron
+icon_uuid: 78645116-29ee-4a64-9800-4abdc92775b9
+icon_default: null
+description: "Lightweight, flexible component for showcasing hero unit style content.\r\n\r\nA lightweight, flexible component that can optionally extend the entire viewport to showcase key marketing messages on your site."
+behavior_plugins: {  }

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - media.type.icon
+    - paragraphs.paragraphs_type.button
+id: paragraph.button.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: button
+label: 'Button Icon'
+description: 'Optional icon that will display inside the button along with the text.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      icon: icon
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: icon
+field_type: entity_reference

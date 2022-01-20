@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: small_50_1x
+label: 'Small Screen, 50vh @ 1x'
+effects:
+  6d23e1e7-425a-40ac-a159-e2920a874adf:
+    uuid: 6d23e1e7-425a-40ac-a159-e2920a874adf
+    id: image_scale
+    weight: 0
+    data:
+      width: 640
+      height: 480
+      upscale: false

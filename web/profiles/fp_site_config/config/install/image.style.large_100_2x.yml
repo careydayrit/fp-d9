@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: large_100_2x
+label: 'Large Screen, 100vh @ 2x'
+effects:
+  ea684e68-967d-4a9a-ac69-fcb6428b1e1b:
+    uuid: ea684e68-967d-4a9a-ac69-fcb6428b1e1b
+    id: image_scale
+    weight: 0
+    data:
+      width: 3840
+      height: 2160
+      upscale: false

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: card
+label: Card
+icon_uuid: cee2594c-c7d7-46f0-bacc-3d41f7ca90e3
+icon_default: null
+description: 'Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.'
+behavior_plugins: {  }

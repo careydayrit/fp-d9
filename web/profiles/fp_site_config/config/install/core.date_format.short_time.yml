@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: short_time
+label: 'Short Time'
+locked: false
+pattern: 'g:m a'

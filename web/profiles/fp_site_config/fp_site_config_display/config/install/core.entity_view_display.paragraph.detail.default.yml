@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.detail.field_detail_label
+    - field.field.paragraph.detail.field_full_html
+    - paragraphs.paragraphs_type.detail
+  module:
+    - field_group
+    - field_group_label
+    - text
+third_party_settings:
+  field_group:
+    group_detail:
+      children:
+        - field_detail_label
+        - field_full_html
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: false
+      label: Detail
+id: paragraph.detail.default
+targetEntityType: paragraph
+bundle: detail
+mode: default
+content:
+  field_detail_label:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_group_label_formatter
+    region: content
+  field_full_html:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

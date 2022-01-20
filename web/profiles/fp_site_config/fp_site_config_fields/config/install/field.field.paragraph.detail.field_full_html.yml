@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_full_html
+    - paragraphs.paragraphs_type.detail
+  module:
+    - text
+id: paragraph.detail.field_full_html
+field_name: field_full_html
+entity_type: paragraph
+bundle: detail
+label: 'Detail body'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: "<p>&lt;detail body&gt;</p>\r\n"
+    format: rich_text
+default_value_callback: ''
+settings: {  }
+field_type: text_long

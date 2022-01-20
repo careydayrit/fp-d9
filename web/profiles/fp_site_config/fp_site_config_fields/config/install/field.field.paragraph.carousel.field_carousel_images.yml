@@ -1,0 +1,105 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_carousel_images
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.carousel_image
+  module:
+    - entity_reference_revisions
+id: paragraph.carousel.field_carousel_images
+field_name: field_carousel_images
+entity_type: paragraph
+bundle: carousel
+label: 'Carousel images'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      carousel_image: carousel_image
+    target_bundles_drag_drop:
+      accordion:
+        weight: 31
+        enabled: false
+      accordion_content:
+        weight: 32
+        enabled: false
+      banner:
+        weight: 33
+        enabled: false
+      block:
+        weight: 34
+        enabled: false
+      button:
+        weight: 35
+        enabled: false
+      card:
+        weight: 7
+        enabled: false
+      cards:
+        weight: 37
+        enabled: false
+      carousel:
+        weight: 8
+        enabled: false
+      carousel_image:
+        enabled: true
+        weight: 6
+      container:
+        weight: 40
+        enabled: false
+      detail:
+        weight: 41
+        enabled: false
+      files:
+        weight: 42
+        enabled: false
+      form:
+        weight: 44
+        enabled: false
+      full_html:
+        weight: 9
+        enabled: false
+      gallery:
+        weight: 46
+        enabled: false
+      gallery_content:
+        weight: 47
+        enabled: false
+      gallery_modal:
+        weight: 48
+        enabled: false
+      gap:
+        weight: 49
+        enabled: false
+      jumbotron:
+        weight: 10
+        enabled: false
+      modal:
+        weight: 51
+        enabled: false
+      section:
+        weight: 54
+        enabled: false
+      section_format:
+        weight: 55
+        enabled: false
+      tab_content:
+        weight: 57
+        enabled: false
+      tabs:
+        weight: 56
+        enabled: false
+      teasers:
+        weight: 58
+        enabled: false
+      views_reference:
+        weight: 59
+        enabled: false
+field_type: entity_reference_revisions

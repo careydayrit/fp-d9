@@ -1,0 +1,70 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - video_filter
+name: Basic
+format: basic
+weight: -9
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: ''
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: true
+    weight: -10
+    settings: {  }
+  video_filter:
+    id: video_filter
+    provider: video_filter
+    status: false
+    weight: 0
+    settings:
+      width: 400
+      height: 400
+      plugins:
+        youtube: 0
+        vimeo: 0
+        capped: 0
+        rutube: 0
+        daily_motion: 0
+        flickr_video: 0
+        ted: 0
+        archive_org: 0
+        picasa_slideshows: 0
+        vbox: 0
+        google_video: 0
+        giphy: 0
+        coub: 0
+        myspace: 0
+        whatchado: 0
+        godtube: 0
+        twitch: 0
+        college_humor: 0
+        vine: 0
+        facebook: 0
+        game_videos: 0
+        game_trailers: 0
+        democracynow: 0
+        wistia: 0
+        twitter: 0
+        flickr_slideshows: 0
+        instagram: 0
+        slideshare: 0
+        myvideo: 0
+        foxnews: 0
+        mailru: 0
+        ustream: 0
+        maker_tv: 0
+        youku: 0
+        vevo: 0
+        teachertube: 0
+      allow_multiple_sources: true

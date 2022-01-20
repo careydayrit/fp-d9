@@ -1,0 +1,93 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.event
+    - paragraphs.paragraphs_type.full_html
+  module:
+    - entity_reference_revisions
+id: node.event.field_body
+field_name: field_body
+entity_type: node
+bundle: event
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      full_html: full_html
+    target_bundles_drag_drop:
+      accordion:
+        weight: -43
+        enabled: false
+      accordion_content:
+        weight: -30
+        enabled: false
+      banner:
+        weight: -26
+        enabled: false
+      block:
+        weight: 27
+        enabled: false
+      card:
+        weight: -41
+        enabled: false
+      cards:
+        weight: -40
+        enabled: false
+      carousel:
+        weight: -29
+        enabled: false
+      carousel_image:
+        weight: -28
+        enabled: false
+      files:
+        weight: -39
+        enabled: false
+      full_html:
+        enabled: true
+        weight: -42
+      gallery:
+        weight: -38
+        enabled: false
+      gallery_content:
+        weight: -27
+        enabled: false
+      gallery_modal:
+        weight: -37
+        enabled: false
+      jumbotron:
+        weight: -36
+        enabled: false
+      modal:
+        weight: -35
+        enabled: false
+      section:
+        weight: 39
+        enabled: false
+      section_format:
+        weight: -25
+        enabled: false
+      tab_content:
+        weight: -24
+        enabled: false
+      tabs:
+        weight: -34
+        enabled: false
+      teaser:
+        weight: 43
+        enabled: false
+      teasers:
+        weight: -33
+        enabled: false
+      views_reference:
+        weight: -32
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,107 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.card_horizontal
+    - field.field.paragraph.card.field_full_html
+    - field.field.paragraph.card.field_image
+    - field.field.paragraph.card.field_links
+    - field.field.paragraph.card.field_title
+    - image.style.golden_ratio_vertical
+    - paragraphs.paragraphs_type.card
+  module:
+    - element_class_formatter
+    - field_group
+    - link
+    - media
+third_party_settings:
+  field_group:
+    group_column_1:
+      children:
+        - field_image
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: ''
+      label: 'Column 1'
+      region: content
+    group_column_2:
+      children:
+        - field_title
+        - field_full_html
+        - field_links
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: card-body
+      label: 'Column 2'
+      region: content
+id: paragraph.card.card_horizontal
+targetEntityType: paragraph
+bundle: card
+mode: card_horizontal
+content:
+  field_full_html:
+    weight: 3
+    label: hidden
+    settings:
+      link_class: ''
+      tag: div
+      class: card-text
+      link: false
+      summary: false
+    third_party_settings: {  }
+    type: wrapper_class
+    region: content
+  field_image:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: golden_ratio_vertical
+      image_link: ''
+    third_party_settings: {  }
+  field_links:
+    type: link
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_class: ''
+      tag: h5
+      class: ''
+      link: false
+      summary: false
+    third_party_settings: {  }
+    type: wrapper_class
+    region: content
+hidden: {  }

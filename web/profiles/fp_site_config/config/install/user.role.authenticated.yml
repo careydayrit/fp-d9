@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies: {  }
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access toolbar'
+  - 'access user contact forms'
+  - 'restful get fp_tools_log_view_resource'
+  - 'use admin toolbar search'
+  - 'view media'
+  - 'view own unpublished content'

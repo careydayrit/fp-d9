@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_full_html
+    - paragraphs.paragraphs_type.card
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    rich_text: rich_text
+    full_html: full_html
+    plain_text: '0'
+    basic: '0'
+id: paragraph.card.field_full_html
+field_name: field_full_html
+entity_type: paragraph
+bundle: card
+label: 'Card description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,120 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contents
+    - paragraphs.paragraphs_type.accordion_content
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.carousel_image
+    - paragraphs.paragraphs_type.container
+    - paragraphs.paragraphs_type.gallery_content
+    - paragraphs.paragraphs_type.jumbotron
+    - paragraphs.paragraphs_type.section_format
+    - paragraphs.paragraphs_type.tab_content
+  module:
+    - entity_reference_revisions
+id: paragraph.container.field_contents
+field_name: field_contents
+entity_type: paragraph
+bundle: container
+label: Contents
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      accordion_content: accordion_content
+      card: card
+      carousel_image: carousel_image
+      gallery_content: gallery_content
+      jumbotron: jumbotron
+      section_format: section_format
+      tab_content: tab_content
+    target_bundles_drag_drop:
+      accordion:
+        weight: 29
+        enabled: false
+      accordion_content:
+        enabled: true
+        weight: 30
+      banner:
+        weight: 31
+        enabled: false
+      block:
+        weight: 32
+        enabled: false
+      button:
+        weight: 33
+        enabled: false
+      card:
+        enabled: true
+        weight: 34
+      cards:
+        weight: 35
+        enabled: false
+      carousel:
+        weight: 36
+        enabled: false
+      carousel_image:
+        enabled: true
+        weight: 37
+      container:
+        weight: 38
+        enabled: false
+      detail:
+        weight: 39
+        enabled: false
+      files:
+        weight: 40
+        enabled: false
+      form:
+        weight: 41
+        enabled: false
+      full_html:
+        weight: 42
+        enabled: false
+      gallery:
+        weight: 43
+        enabled: false
+      gallery_content:
+        enabled: true
+        weight: 44
+      gallery_modal:
+        weight: 45
+        enabled: false
+      gap:
+        weight: 50
+        enabled: false
+      jumbotron:
+        enabled: true
+        weight: 46
+      modal:
+        weight: 47
+        enabled: false
+      section:
+        weight: 50
+        enabled: false
+      section_format:
+        enabled: true
+        weight: 51
+      tab_content:
+        enabled: true
+        weight: 53
+      tabs:
+        weight: 52
+        enabled: false
+      teasers:
+        weight: 54
+        enabled: false
+      telephone:
+        weight: 61
+        enabled: false
+      views_reference:
+        weight: 55
+        enabled: false
+field_type: entity_reference_revisions

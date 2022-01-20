@@ -1,0 +1,13 @@
+definitions:
+  user__page:
+    menu_name: main
+    parent: ''
+    weight: -10
+    expanded: false
+    enabled: true
+  user__logout:
+    menu_name: main
+    parent: ''
+    weight: 10
+    expanded: false
+    enabled: true

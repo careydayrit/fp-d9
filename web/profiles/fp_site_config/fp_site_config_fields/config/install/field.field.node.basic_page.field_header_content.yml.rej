@@ -1,0 +1,25 @@
+diff a/web/profiles/fp_site_config/fp_site_config_fields/config/install/field.field.node.basic_page.field_header_content.yml b/web/profiles/fp_site_config/fp_site_config_fields/config/install/field.field.node.basic_page.field_header_content.yml	(rejected hunks)
+@@ -42,14 +48,23 @@ settings:
+         weight: -35
+         enabled: false
+       carousel:
+         enabled: false
+         weight: -45
+       carousel_image:
+         weight: -44
+         enabled: false
++      container:
++        weight: 39
++        enabled: false
++      detail:
++        weight: 40
++        enabled: false
+       files:
+         weight: -31
+         enabled: false
++      form:
++        weight: 42
++        enabled: false
+       full_html:
+         weight: -43
+         enabled: false

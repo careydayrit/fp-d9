@@ -1,0 +1,29 @@
+diff a/web/profiles/fp_site_config/fp_site_config_fields/config/install/field.field.paragraph.cards.field_cards.yml b/web/profiles/fp_site_config/fp_site_config_fields/config/install/field.field.paragraph.cards.field_cards.yml	(rejected hunks)
+@@ -60,21 +75,27 @@ settings:
+       modal:
+         weight: 30
+         enabled: false
++      section:
++        weight: 46
++        enabled: false
+       section_format:
+         weight: 31
+         enabled: false
+       sliver:
+        weight: 32
+        enabled: false
+       tabs:
+         weight: 33
+         enabled: false
+       tab_content:
+         weight: 34
+         enabled: false
+       teasers:
+         weight: 35
+         enabled: false
+       views_reference:
+         weight: 36
+         enabled: false
++      webform:
++        weight: 52
++        enabled: false

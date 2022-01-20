@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_mode
+    - paragraphs.paragraphs_type.banner
+  module:
+    - entity_reference_display
+id: paragraph.banner.field_display_mode
+field_name: field_display_mode
+entity_type: paragraph
+bundle: banner
+label: 'Display mode'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: banner_horizontal
+default_value_callback: ''
+settings:
+  exclude:
+    banner_horizontal: banner_horizontal
+    banner_vertical: banner_vertical
+  negate: 1
+field_type: entity_reference_display

@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file
+    - paragraphs.paragraphs_type.files
+  module:
+    - file
+id: paragraph.files.field_file
+field_name: field_file
+entity_type: paragraph
+bundle: files
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: documents
+  file_extensions: 'txt pdf doc docx ppt rtf'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

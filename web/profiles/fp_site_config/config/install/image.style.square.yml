@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: square
+label: Square
+effects:
+  a2df36f4-c27f-41cc-b571-343f21044b40:
+    uuid: a2df36f4-c27f-41cc-b571-343f21044b40
+    id: image_effects_relative_crop
+    weight: 1
+    data:
+      anchor:
+        width: center
+        height: center
+      width: 1
+      height: 1

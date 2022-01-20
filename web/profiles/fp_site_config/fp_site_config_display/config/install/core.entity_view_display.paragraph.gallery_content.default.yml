@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery_content.field_image
+    - field.field.paragraph.gallery_content.field_title
+    - image.style.golden_ratio
+    - paragraphs.paragraphs_type.gallery_content
+  module:
+    - element_class_formatter
+    - media
+id: paragraph.gallery_content.default
+targetEntityType: paragraph
+bundle: gallery_content
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: golden_ratio
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_class: ''
+      tag: div
+      class: 'carousel-caption d-none d-md-block'
+      link: false
+      summary: false
+      trim: 200
+    third_party_settings: {  }
+    type: wrapper_class
+    region: content
+hidden:
+  search_api_excerpt: true

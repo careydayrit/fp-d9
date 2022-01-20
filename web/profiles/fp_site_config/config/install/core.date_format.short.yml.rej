@@ -1,0 +1,7 @@
+diff a/web/profiles/fp_site_config/config/install/core.date_format.short.yml b/web/profiles/fp_site_config/config/install/core.date_format.short.yml	(rejected hunks)
+@@ -4,4 +4,4 @@ dependencies: {  }
+ id: short
+ label: 'Default short date'
+ locked: false
+-pattern: 'm/d/Y - g:i a'
++pattern: m/d/Y

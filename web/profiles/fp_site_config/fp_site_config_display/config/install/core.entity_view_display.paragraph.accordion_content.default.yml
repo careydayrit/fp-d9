@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion_content.field_full_html
+    - field.field.paragraph.accordion_content.field_title
+    - paragraphs.paragraphs_type.accordion_content
+  module:
+    - text
+id: paragraph.accordion_content.default
+targetEntityType: paragraph
+bundle: accordion_content
+mode: default
+content:
+  field_full_html:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_title: true

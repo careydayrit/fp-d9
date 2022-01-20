@@ -1,0 +1,29 @@
+diff a/web/profiles/fp_site_config/fp_site_config_fields/config/install/field.field.node.person.field_header_content.yml b/web/profiles/fp_site_config/fp_site_config_fields/config/install/field.field.node.person.field_header_content.yml	(rejected hunks)
+@@ -50,18 +74,27 @@ settings:
+       gallery_content:
+         weight: 23
+         enabled: false
++      gallery_modal:
++        weight: 46
++        enabled: false
++      gap:
++        weight: 47
++        enabled: false
+       jumbotron:
+         enabled: true
+         weight: 24
+       modal:
+         weight: 25
+         enabled: false
++      section:
++        weight: 52
++        enabled: false
+       section_format:
+         weight: 26
+         enabled: false
+       sliver:
+        enabled: true
+        weight: 28
+       tab_content:
+         weight: 27
+         enabled: false

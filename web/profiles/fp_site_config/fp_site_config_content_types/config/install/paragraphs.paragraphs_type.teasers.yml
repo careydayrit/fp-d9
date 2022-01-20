@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: teasers
+label: 'Related content'
+icon_uuid: null
+icon_default: null
+description: 'Reference one or more nodes and choose the view mode to display. Default is ''teaser'' view mode.'
+behavior_plugins: {  }

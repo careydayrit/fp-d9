@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: small_25_2x
+label: 'Small Screen, 25vh @ 2x'
+effects:
+  f8d11a65-2165-4049-9db8-3697ac4c6f89:
+    uuid: f8d11a65-2165-4049-9db8-3697ac4c6f89
+    id: image_scale
+    weight: 0
+    data:
+      width: 1280
+      height: 480
+      upscale: false

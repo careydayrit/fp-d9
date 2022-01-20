@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_detail_label
+    - paragraphs.paragraphs_type.detail
+  module:
+    - field_group_label
+id: paragraph.detail.field_detail_label
+field_name: field_detail_label
+entity_type: paragraph
+bundle: detail
+label: 'Detail label'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_group_label_field_type

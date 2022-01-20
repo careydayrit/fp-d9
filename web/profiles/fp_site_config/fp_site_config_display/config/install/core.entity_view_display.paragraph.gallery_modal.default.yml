@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery_modal.field_columns
+    - field.field.paragraph.gallery_modal.field_images
+    - paragraphs.paragraphs_type.gallery_modal
+id: paragraph.gallery_modal.default
+targetEntityType: paragraph
+bundle: gallery_modal
+mode: default
+content:
+  field_images:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_columns: true

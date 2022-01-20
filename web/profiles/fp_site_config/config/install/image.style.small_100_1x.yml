@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: small_100_1x
+label: 'Small Screen, 100vh @ 1x'
+effects:
+  e11646a9-b867-4a22-ac57-6a3a2b31aa78:
+    uuid: e11646a9-b867-4a22-ac57-6a3a2b31aa78
+    id: image_scale
+    weight: 0
+    data:
+      width: 640
+      height: 960
+      upscale: false

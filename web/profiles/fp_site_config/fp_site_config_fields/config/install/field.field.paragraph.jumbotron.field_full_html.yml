@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_full_html
+    - paragraphs.paragraphs_type.jumbotron
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic: basic
+    plain_text: '0'
+    rich_text: '0'
+    full_html: '0'
+id: paragraph.jumbotron.field_full_html
+field_name: field_full_html
+entity_type: paragraph
+bundle: jumbotron
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

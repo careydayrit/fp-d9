@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vh
+    - paragraphs.paragraphs_type.banner
+  module:
+    - options
+id: paragraph.banner.field_vh
+field_name: field_vh
+entity_type: paragraph
+bundle: banner
+label: Height
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 25
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

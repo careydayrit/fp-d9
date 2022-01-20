@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: medium_50_1x
+label: 'Medium Screen, 50vh @ 1x'
+effects:
+  e22e97b4-a62e-4f0f-9bc0-97f462e4b74d:
+    uuid: e22e97b4-a62e-4f0f-9bc0-97f462e4b74d
+    id: image_scale
+    weight: 0
+    data:
+      width: 1024
+      height: 512
+      upscale: false

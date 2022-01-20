@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.resource
+  module:
+    - file
+id: node.resource.field_files
+field_name: field_files
+entity_type: node
+bundle: resource
+label: Resources
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: documents/resources
+  file_extensions: 'txt rtf doc docx dot ppt pptx pdf xls xlsx jpg png gif tiff pages key zip eps html csv gz'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

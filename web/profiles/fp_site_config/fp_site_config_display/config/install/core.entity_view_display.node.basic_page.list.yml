@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.list
+    - field.field.node.basic_page.field_body
+    - field.field.node.basic_page.field_header_content
+    - field.field.node.basic_page.field_sidebar_content
+    - field.field.node.basic_page.field_teaser
+    - node.type.basic_page
+  module:
+    - smart_title
+    - user
+third_party_settings:
+  smart_title:
+    enabled: true
+    settings:
+      smart_title__tag: h2
+      smart_title__classes:
+        - node__title
+      smart_title__link: true
+id: node.basic_page.list
+targetEntityType: node
+bundle: basic_page
+mode: list
+content:
+  show_title:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  smart_title:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_body: true
+  field_header_content: true
+  field_sidebar_content: true
+  field_teaser: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

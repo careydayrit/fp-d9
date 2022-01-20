@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: golden_ratio_vertical
+label: 'Golden Ratio Vertical'
+effects:
+  03303a59-3c55-4d7a-a5d1-eb23827d6ecf:
+    uuid: 03303a59-3c55-4d7a-a5d1-eb23827d6ecf
+    id: image_effects_smart_crop
+    weight: 1
+    data:
+      width: '1000'
+      height: '1618'
+      square: false
+      simulate: false
+      algorithm: entropy_slice

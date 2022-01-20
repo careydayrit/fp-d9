@@ -1,0 +1,4 @@
+ignored_config_entities:
+  - reroute_email.settings
+  - system.site
+  - system.performance

@@ -1,0 +1,6 @@
+enabled: 1
+directory: '../config'
+webhook: ''
+webhook_params: ''
+delay: '0'
+delay_from_first: 0

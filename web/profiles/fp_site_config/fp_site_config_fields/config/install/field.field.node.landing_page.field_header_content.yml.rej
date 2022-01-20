@@ -1,0 +1,32 @@
+diff a/web/profiles/fp_site_config/fp_site_config_fields/config/install/field.field.node.landing_page.field_header_content.yml b/web/profiles/fp_site_config/fp_site_config_fields/config/install/field.field.node.landing_page.field_header_content.yml	(rejected hunks)
+@@ -62,27 +77,30 @@ settings:
+       gallery_modal:
+         weight: -28
+         enabled: false
++      gap:
++        weight: 47
++        enabled: false
+       jumbotron:
+         enabled: true
+         weight: -46
+       modal:
+         weight: -37
+         enabled: false
+       section:
+         weight: -27
+         enabled: false
+       section_format:
+         weight: -36
+         enabled: false
+       sliver:
+        enabled: true
+        weight: -34
+       tab_content:
+         weight: -32
+         enabled: false
+       tabs:
+         weight: -33
+         enabled: false
+       teasers:
+         weight: -30
+         enabled: false

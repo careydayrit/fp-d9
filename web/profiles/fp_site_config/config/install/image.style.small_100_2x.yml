@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: small_100_2x
+label: 'Small Screen, 100vh @ 2x'
+effects:
+  8a8dcd0c-9dc0-4fb7-b7a7-60237b98c739:
+    uuid: 8a8dcd0c-9dc0-4fb7-b7a7-60237b98c739
+    id: image_scale
+    weight: 0
+    data:
+      width: 1280
+      height: 1920
+      upscale: false

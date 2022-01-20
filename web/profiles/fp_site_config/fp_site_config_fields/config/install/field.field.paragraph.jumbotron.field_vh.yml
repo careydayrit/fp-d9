@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vh
+    - paragraphs.paragraphs_type.jumbotron
+  module:
+    - options
+id: paragraph.jumbotron.field_vh
+field_name: field_vh
+entity_type: paragraph
+bundle: jumbotron
+label: Height
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 100
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

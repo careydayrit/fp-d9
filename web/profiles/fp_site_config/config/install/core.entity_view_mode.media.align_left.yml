@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.align_left
+label: 'Align Left'
+targetEntityType: media
+cache: true

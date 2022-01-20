@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.teasers.field_columns
+    - field.field.paragraph.teasers.field_content_reference
+    - field.field.paragraph.teasers.field_display_mode
+    - field.field.paragraph.teasers.field_title
+    - paragraphs.paragraphs_type.teasers
+id: paragraph.teasers.default
+targetEntityType: paragraph
+bundle: teasers
+mode: default
+content:
+  field_columns:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_content_reference:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_display_mode:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,77 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_content
+    - node.type.news
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.jumbotron
+  module:
+    - entity_reference_revisions
+id: node.news.field_header_content
+field_name: field_header_content
+entity_type: node
+bundle: news
+label: 'Header content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      carousel: carousel
+      jumbotron: jumbotron
+    target_bundles_drag_drop:
+      accordion:
+        weight: 17
+        enabled: false
+      accordion_content:
+        weight: 18
+        enabled: false
+      card:
+        weight: 19
+        enabled: false
+      carousel:
+        enabled: true
+        weight: 20
+      carousel_image:
+        weight: 21
+        enabled: false
+      full_html:
+        weight: 22
+        enabled: false
+      gallery:
+        weight: 23
+        enabled: false
+      gallery_content:
+        weight: 24
+        enabled: false
+      jumbotron:
+        enabled: true
+        weight: 25
+      modal:
+        weight: 26
+        enabled: false
+      section_format:
+        weight: 27
+        enabled: false
+      sliver:
+        enabled: true
+        weight: 28
+      tab_content:
+        weight: 29
+        enabled: false
+      tabs:
+        weight: 30
+        enabled: false
+      teasers:
+        weight: 31
+        enabled: false
+      views_reference:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

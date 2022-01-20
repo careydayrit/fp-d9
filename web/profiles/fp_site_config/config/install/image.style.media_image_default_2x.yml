@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: media_image_default_2x
+label: 'Media Image Default @ 2x'
+effects:
+  80d4be03-3f7d-4728-ab8d-0ff3619cced2:
+    uuid: 80d4be03-3f7d-4728-ab8d-0ff3619cced2
+    id: image_effects_auto_orient
+    weight: 1
+    data:
+      scan_exif: true
+  d7291752-8704-4050-acdc-a467afa330b9:
+    uuid: d7291752-8704-4050-acdc-a467afa330b9
+    id: image_scale
+    weight: 2
+    data:
+      width: 2400
+      height: 2400
+      upscale: false
+  31c52c54-12c8-45aa-be84-8eb74e71776b:
+    uuid: 31c52c54-12c8-45aa-be84-8eb74e71776b
+    id: image_effects_strip_metadata
+    weight: 3
+    data: {  }

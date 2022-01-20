@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landing_page.field_body
+    - field.field.node.landing_page.field_header_content
+    - field.field.node.landing_page.field_teaser
+    - node.type.landing_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.landing_page.teaser
+targetEntityType: node
+bundle: landing_page
+mode: teaser
+content:
+  field_teaser:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: card_vertical
+      link: ''
+    third_party_settings: {  }
+hidden:
+  field_body: true
+  field_header_content: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  smart_title: true

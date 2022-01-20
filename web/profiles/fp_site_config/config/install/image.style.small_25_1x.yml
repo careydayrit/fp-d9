@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: small_25_1x
+label: 'Small Screen, 25vh @ 1x'
+effects:
+  0c1cc939-d618-4ef9-825d-517106496ed0:
+    uuid: 0c1cc939-d618-4ef9-825d-517106496ed0
+    id: image_scale
+    weight: 0
+    data:
+      width: 640
+      height: 240
+      upscale: false

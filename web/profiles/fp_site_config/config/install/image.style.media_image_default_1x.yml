@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: media_image_default_1x
+label: 'Media Image Default @ 1x'
+effects:
+  1bfb3425-6311-46c3-bdcc-3bc2ee32fc24:
+    uuid: 1bfb3425-6311-46c3-bdcc-3bc2ee32fc24
+    id: image_scale
+    weight: -9
+    data:
+      width: 1200
+      height: 1200
+      upscale: false
+  5665c35b-b334-433f-bba7-04ba48498cc8:
+    uuid: 5665c35b-b334-433f-bba7-04ba48498cc8
+    id: image_effects_strip_metadata
+    weight: -8
+    data: {  }
+  85267532-8759-4d1e-80dc-ec6944fe3f20:
+    uuid: 85267532-8759-4d1e-80dc-ec6944fe3f20
+    id: image_effects_auto_orient
+    weight: -10
+    data:
+      scan_exif: true

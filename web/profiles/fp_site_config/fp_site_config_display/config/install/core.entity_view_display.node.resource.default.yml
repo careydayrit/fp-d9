@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.resource.field_body
+    - field.field.node.resource.field_files
+    - field.field.node.resource.field_header_content
+    - field.field.node.resource.field_image
+    - field.field.node.resource.field_sidebar_content
+    - field.field.node.resource.field_teaser
+    - node.type.resource
+  module:
+    - entity_reference_revisions
+    - file
+    - user
+id: node.resource.default
+targetEntityType: node
+bundle: resource
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_files:
+    weight: 1
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  field_header_content: true
+  field_image: true
+  field_sidebar_content: true
+  field_teaser: true
+  langcode: true
+  links: true

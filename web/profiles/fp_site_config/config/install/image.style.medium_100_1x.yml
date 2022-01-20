@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: medium_100_1x
+label: 'Medium Screen, 100vh @ 1x'
+effects:
+  06a290c6-c037-42b7-8636-b56a68f74969:
+    uuid: 06a290c6-c037-42b7-8636-b56a68f74969
+    id: image_scale
+    weight: 0
+    data:
+      width: 1024
+      height: 1024
+      upscale: false

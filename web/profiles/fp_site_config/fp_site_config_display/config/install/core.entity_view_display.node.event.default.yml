@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.field_body
+    - field.field.node.event.field_date_range
+    - field.field.node.event.field_header_content
+    - field.field.node.event.field_sidebar_content
+    - field.field.node.event.field_teaser
+    - node.type.event
+  module:
+    - datetime_range
+    - entity_reference_revisions
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  field_body:
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_date_range:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: short
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+hidden:
+  field_header_content: true
+  field_sidebar_content: true
+  field_teaser: true
+  langcode: true
+  links: true
+  smart_title: true

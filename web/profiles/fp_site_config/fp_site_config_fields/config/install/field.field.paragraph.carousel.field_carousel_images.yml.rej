@@ -1,0 +1,99 @@
+diff a/web/profiles/fp_site_config/fp_site_config_fields/config/install/field.field.paragraph.carousel.field_carousel_images.yml b/web/profiles/fp_site_config/fp_site_config_fields/config/install/field.field.paragraph.carousel.field_carousel_images.yml	(rejected hunks)
+@@ -13,7 +13,7 @@ entity_type: paragraph
+ bundle: carousel
+ label: 'Carousel images'
+ description: ''
+-required: false
++required: true
+ translatable: false
+ default_value: {  }
+ default_value_callback: ''
+@@ -24,19 +24,85 @@ settings:
+     target_bundles:
+       carousel_image: carousel_image
+     target_bundles_drag_drop:
+-      carousel_image:
+-        enabled: true
+-        weight: 6
++      accordion:
++        weight: 31
++        enabled: false
++      accordion_content:
++        weight: 32
++        enabled: false
++      banner:
++        weight: 33
++        enabled: false
++      block:
++        weight: 34
++        enabled: false
++      button:
++        weight: 35
++        enabled: false
+       card:
+         weight: 7
+         enabled: false
++      cards:
++        weight: 37
++        enabled: false
+       carousel:
+         weight: 8
+         enabled: false
++      carousel_image:
++        enabled: true
++        weight: 6
++      container:
++        weight: 40
++        enabled: false
++      detail:
++        weight: 41
++        enabled: false
++      files:
++        weight: 42
++        enabled: false
++      form:
++        weight: 44
++        enabled: false
+       full_html:
+         weight: 9
+         enabled: false
++      gallery:
++        weight: 46
++        enabled: false
++      gallery_content:
++        weight: 47
++        enabled: false
++      gallery_modal:
++        weight: 48
++        enabled: false
++      gap:
++        weight: 49
++        enabled: false
+       jumbotron:
+         weight: 10
+         enabled: false
++      modal:
++        weight: 51
++        enabled: false
++      section:
++        weight: 54
++        enabled: false
++      section_format:
++        weight: 55
++        enabled: false
++      tab_content:
++        weight: 57
++        enabled: false
++      tabs:
++        weight: 56
++        enabled: false
++      teasers:
++        weight: 58
++        enabled: false
++      views_reference:
++        weight: 59
++        enabled: false
++      webform:
++        weight: 60
++        enabled: false
+ field_type: entity_reference_revisions

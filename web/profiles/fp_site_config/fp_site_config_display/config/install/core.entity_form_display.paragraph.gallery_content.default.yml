@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery_content.field_image
+    - field.field.paragraph.gallery_content.field_title
+    - paragraphs.paragraphs_type.gallery_content
+  module:
+    - media_library
+id: paragraph.gallery_content.default
+targetEntityType: paragraph
+bundle: gallery_content
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

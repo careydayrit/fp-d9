@@ -1,0 +1,96 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cards
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.cards
+  module:
+    - entity_reference_revisions
+id: paragraph.cards.field_cards
+field_name: field_cards
+entity_type: paragraph
+bundle: cards
+label: Cards
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      card: card
+    target_bundles_drag_drop:
+      accordion:
+        weight: 19
+        enabled: false
+      accordion_content:
+        weight: 20
+        enabled: false
+      banner:
+        weight: 29
+        enabled: false
+      block:
+        weight: 30
+        enabled: false
+      card:
+        enabled: true
+        weight: 21
+      cards:
+        weight: 22
+        enabled: false
+      carousel:
+        weight: 23
+        enabled: false
+      carousel_image:
+        weight: 24
+        enabled: false
+      detail:
+        weight: 35
+        enabled: false
+      files:
+        weight: 36
+        enabled: false
+      form:
+        weight: 37
+        enabled: false
+      full_html:
+        weight: 25
+        enabled: false
+      gallery:
+        weight: 26
+        enabled: false
+      gallery_content:
+        weight: 27
+        enabled: false
+      gallery_modal:
+        weight: 28
+        enabled: false
+      jumbotron:
+        weight: 29
+        enabled: false
+      modal:
+        weight: 30
+        enabled: false
+      section_format:
+        weight: 31
+        enabled: false
+      sliver:
+        weight: 32
+        enabled: false
+      tabs:
+        weight: 33
+        enabled: false
+      tab_content:
+        weight: 34
+        enabled: false
+      teasers:
+        weight: 35
+        enabled: false
+      views_reference:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

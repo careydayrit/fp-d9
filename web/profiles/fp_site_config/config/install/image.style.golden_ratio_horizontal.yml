@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: golden_ratio_horizontal
+label: 'Golden Ratio Horizontal'
+effects:
+  75c60e2d-69c8-46a7-b22a-593bfaf2f4e1:
+    uuid: 75c60e2d-69c8-46a7-b22a-593bfaf2f4e1
+    id: image_effects_smart_crop
+    weight: 1
+    data:
+      width: '1618'
+      height: '1000'
+      square: false
+      simulate: false
+      algorithm: entropy_slice

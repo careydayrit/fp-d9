@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.field_body
+    - field.field.node.landing_page.field_header_content
+    - field.field.node.landing_page.field_teaser
+    - node.type.landing_page
+  module:
+    - entity_reference_revisions
+    - smart_title
+    - user
+third_party_settings:
+  smart_title:
+    enabled: false
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  field_header_content: true
+  field_teaser: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  smart_title: true

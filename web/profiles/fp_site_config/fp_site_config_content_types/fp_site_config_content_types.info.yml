@@ -1,0 +1,33 @@
+name: 'Stock #1: Content Types'
+description: 'Installs configuration for stock content types. This can be removed after installation.'
+type: module
+core_version_requirement: ^9
+dependencies:
+  - entity_reference_revisions
+  - field
+  - field_group
+  - file
+  - image
+  - language
+  - menu_ui
+  - node
+  - paragraphs
+  - path
+  - system
+  - text
+  - user
+  - block
+  - field_permissions
+  - entity_reference_display
+  - link
+  - options
+  - views
+  - viewsreference
+  - webform
+install:
+  - smart_trim
+  - content_translation
+  - datetime
+  - datetime_range
+  - element_class_formatter
+package: 'FivePaths Stocksite Configuration'

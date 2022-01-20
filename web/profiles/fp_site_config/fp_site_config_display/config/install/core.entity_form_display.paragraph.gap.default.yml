@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gap.field_size
+    - paragraphs.paragraphs_type.gap
+id: paragraph.gap.default
+targetEntityType: paragraph
+bundle: gap
+mode: default
+content:
+  field_size:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+hidden:
+  created: true
+  status: true

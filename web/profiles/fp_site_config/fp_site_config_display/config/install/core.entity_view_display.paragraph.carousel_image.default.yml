@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel_image.field_image
+    - field.field.paragraph.carousel_image.field_link
+    - field.field.paragraph.carousel_image.field_plain_text
+    - paragraphs.paragraphs_type.carousel_image
+  module:
+    - element_class_formatter
+id: paragraph.carousel_image.default
+targetEntityType: paragraph
+bundle: carousel_image
+mode: default
+content:
+  field_plain_text:
+    weight: 0
+    label: hidden
+    settings:
+      link_class: ''
+      tag: div
+      class: 'carousel-caption d-none d-md-block'
+      link: false
+      summary: false
+    third_party_settings: {  }
+    type: wrapper_class
+    region: content
+hidden:
+  field_image: true
+  field_link: true

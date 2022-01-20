@@ -1,0 +1,101 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_content
+    - node.type.person
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.jumbotron
+  module:
+    - entity_reference_revisions
+id: node.person.field_header_content
+field_name: field_header_content
+entity_type: node
+bundle: person
+label: Header
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      carousel: carousel
+      jumbotron: jumbotron
+    target_bundles_drag_drop:
+      accordion:
+        weight: 16
+        enabled: false
+      accordion_content:
+        weight: 17
+        enabled: false
+      banner:
+        weight: 32
+        enabled: false
+      block:
+        weight: 33
+        enabled: false
+      button:
+        weight: 34
+        enabled: false
+      card:
+        weight: 18
+        enabled: false
+      cards:
+        weight: 36
+        enabled: false
+      carousel:
+        enabled: true
+        weight: 19
+      carousel_image:
+        weight: 20
+        enabled: false
+      container:
+        weight: 39
+        enabled: false
+      detail:
+        weight: 40
+        enabled: false
+      files:
+        weight: 41
+        enabled: false
+      form:
+        weight: 42
+        enabled: false
+      full_html:
+        weight: 21
+        enabled: false
+      gallery:
+        weight: 22
+        enabled: false
+      gallery_content:
+        weight: 23
+        enabled: false
+      jumbotron:
+        enabled: true
+        weight: 24
+      modal:
+        weight: 25
+        enabled: false
+      section_format:
+        weight: 26
+        enabled: false
+      sliver:
+        enabled: true
+        weight: 28
+      tab_content:
+        weight: 27
+        enabled: false
+      tabs:
+        weight: 28
+        enabled: false
+      teasers:
+        weight: 29
+        enabled: false
+      views_reference:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

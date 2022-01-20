@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.telephone.field_label
+    - field.field.paragraph.telephone.field_number
+    - paragraphs.paragraphs_type.telephone
+  module:
+    - telephone
+id: paragraph.telephone.default
+targetEntityType: paragraph
+bundle: telephone
+mode: default
+content:
+  field_label:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_number:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+hidden:
+  created: true
+  status: true
